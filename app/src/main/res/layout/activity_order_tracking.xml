@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF9F5"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/txtTrackingTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Theo dõi giao hàng"
+            android:textColor="#171717"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="30dp"/>
+
+        <TextView
+            android:id="@+id/txtTrackingOrderId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đơn hàng 1"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#B7191F"
+            android:layout_marginBottom="28dp"/>
+
+        <TextView
+            android:id="@+id/txtStepConfirmed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="✓  Đã xác nhận đơn hàng"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:padding="12dp"/>
+
+        <TextView
+            android:id="@+id/txtStepAccepted"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="○  Tài xế đã nhận đơn"
+            android:textColor="#777777"
+            android:textSize="16sp"
+            android:padding="12dp"/>
+
+        <TextView
+            android:id="@+id/txtStepShipping"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="○  Đang giao hàng"
+            android:textColor="#777777"
+            android:textSize="16sp"
+            android:padding="12dp"/>
+
+        <TextView
+            android:id="@+id/txtStepDelivered"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="○  Giao hàng thành công"
+            android:textColor="#777777"
+            android:textSize="16sp"
+            android:padding="12dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thông tin tài xế"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#171717"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:id="@+id/txtDriverName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chưa có tài xế nhận đơn"
+            android:textColor="#555555"
+            android:textSize="15sp"
+            android:padding="8dp"/>
+
+        <TextView
+            android:id="@+id/txtDriverPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#555555"
+            android:textSize="15sp"
+            android:padding="8dp"/>
+
+        <Button
+            android:id="@+id/btnTrackingChat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chat với tài xế"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#B7191F"
+            android:layout_marginTop="32dp"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+
+    app:cardBackgroundColor="#181818"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp"
+    app:strokeColor="#333333"
+    app:strokeWidth="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+
+        <!-- ẢNH MÓN ĂN -->
+
+        <ImageView
+            android:id="@+id/imgFood"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo_restaurant" />
+
+
+        <!-- THÔNG TIN -->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <!-- TÊN MÓN -->
+
+            <TextView
+                android:id="@+id/txtFoodName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="Tên món ăn"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+
+            <!-- MÔ TẢ -->
+
+            <TextView
+                android:id="@+id/txtDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="5dp"
+
+                android:ellipsize="end"
+                android:maxLines="2"
+
+                android:text="Mô tả món ăn hấp dẫn"
+                android:textColor="#D0D0D0"
+                android:textSize="13sp" />
+
+
+            <!-- GIÁ + BUTTON -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp"
+
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+                <!-- GIÁ -->
+
+                <TextView
+                    android:id="@+id/txtPrice"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+
+                    android:text="89.000đ"
+                    android:textColor="#FF6B6B"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+                <!-- THÊM -->
+
+                <TextView
+                    android:id="@+id/btnAddCart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:background="@drawable/bg_category_selected"
+
+                    android:paddingStart="14dp"
+                    android:paddingTop="7dp"
+                    android:paddingEnd="14dp"
+                    android:paddingBottom="7dp"
+
+                    android:text="Thêm"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

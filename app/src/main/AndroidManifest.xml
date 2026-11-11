@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Cho phép kết nối Internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Project"
+        android:usesCleartextTraffic="true">
+
+        <!-- GOOGLE MAPS API KEY -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDQGx7lnor6flo65qrnbUcPX3c9HX9KFJE" />
+
+        <!-- WELCOME -->
+        <activity
+            android:name=".Welcome"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <!-- REGISTER -->
+        <activity
+            android:name=".Register"
+            android:exported="false" />
+
+        <!-- LOGIN -->
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+
+        <!-- PROFILE -->
+        <activity
+            android:name=".Profile"
+            android:exported="false" />
+
+        <!-- MAP -->
+        <activity
+            android:name=".MapActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- HOME -->
+        <activity
+            android:name=".Home"
+            android:exported="false" />
+
+        <!-- MENU -->
+        <activity
+            android:name=".Menu"
+            android:exported="false" />
+
+        <!-- CART -->
+        <activity
+            android:name=".Cart"
+            android:exported="false" />
+
+        <!-- CHECKOUT -->
+        <activity
+            android:name=".Checkout"
+            android:exported="false" />
+
+        <!-- SUCCESS -->
+        <activity
+            android:name=".OrderDetail"
+            android:exported="false" />
+
+        <activity
+            android:name=".DriverOrdersActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".OrderTrackingActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ChatActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

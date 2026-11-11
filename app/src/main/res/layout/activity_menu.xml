@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF9F3"
+    android:orientation="vertical">
+
+
+    <!-- ================================================= -->
+    <!-- HEADER                                            -->
+    <!-- ================================================= -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp">
+
+
+        <!-- BACK -->
+
+        <TextView
+            android:id="@+id/btnBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="‹"
+            android:textColor="#111111"
+            android:textSize="38sp" />
+
+
+        <!-- TITLE -->
+
+        <TextView
+            android:id="@+id/txtMenuTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Thực đơn SushiZen"
+            android:textColor="#111111"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <!-- CÂN BẰNG BÊN PHẢI -->
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+    </LinearLayout>
+
+
+    <!-- ================================================= -->
+    <!-- SEARCH                                            -->
+    <!-- ================================================= -->
+
+    <EditText
+        android:id="@+id/edtSearchMenu"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/bg_register"
+        android:drawableStart="@drawable/ic_search"
+        android:drawablePadding="10dp"
+        android:hint="Tìm món ăn..."
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:singleLine="true"
+        android:textColor="#222222"
+        android:textColorHint="#999999"
+        android:textSize="14sp" />
+
+
+    <!-- ================================================= -->
+    <!-- FILTER                                            -->
+    <!-- ================================================= -->
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:fillViewport="false"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp">
+
+
+            <!-- ================= TẤT CẢ ================= -->
+
+            <TextView
+                android:id="@+id/btnAll"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:background="@drawable/bg_category_selected"
+                android:gravity="center"
+                android:minWidth="75dp"
+                android:paddingStart="18dp"
+                android:paddingEnd="18dp"
+                android:text="Tất cả"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+
+            <!-- ================= MÓN NỔI BẬT ================= -->
+
+            <TextView
+                android:id="@+id/btnFeatured"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/bg_category_normal"
+                android:gravity="center"
+                android:minWidth="110dp"
+                android:paddingStart="18dp"
+                android:paddingEnd="18dp"
+                android:text="Món nổi bật"
+                android:textColor="#333333"
+                android:textSize="13sp" />
+
+
+            <!-- ================= SUSHI ================= -->
+
+            <TextView
+                android:id="@+id/btnSushi"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/bg_category_normal"
+                android:gravity="center"
+                android:minWidth="75dp"
+                android:paddingStart="18dp"
+                android:paddingEnd="18dp"
+                android:text="Sushi"
+                android:textColor="#333333"
+                android:textSize="13sp" />
+
+
+            <!-- ================= SASHIMI ================= -->
+
+            <TextView
+                android:id="@+id/btnSashimi"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/bg_category_normal"
+                android:gravity="center"
+                android:minWidth="85dp"
+                android:paddingStart="18dp"
+                android:paddingEnd="18dp"
+                android:text="Sashimi"
+                android:textColor="#333333"
+                android:textSize="13sp" />
+
+
+            <!-- ================= MAKI ================= -->
+
+            <TextView
+                android:id="@+id/btnMaki"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/bg_category_normal"
+                android:gravity="center"
+                android:minWidth="75dp"
+                android:paddingStart="18dp"
+                android:paddingEnd="18dp"
+                android:text="Maki"
+                android:textColor="#333333"
+                android:textSize="13sp" />
+
+
+            <!-- ================= RAMEN ================= -->
+
+            <TextView
+                android:id="@+id/btnRamen"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/bg_category_normal"
+                android:gravity="center"
+                android:minWidth="80dp"
+                android:paddingStart="18dp"
+                android:paddingEnd="18dp"
+                android:text="Ramen"
+                android:textColor="#333333"
+                android:textSize="13sp" />
+
+
+            <!-- ================= ĐỒ UỐNG ================= -->
+
+            <TextView
+                android:id="@+id/btnDrink"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/bg_category_normal"
+                android:gravity="center"
+                android:minWidth="90dp"
+                android:paddingStart="18dp"
+                android:paddingEnd="18dp"
+                android:text="Đồ uống"
+                android:textColor="#333333"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+    <!-- ================================================= -->
+    <!-- TITLE RESULT                                      -->
+    <!-- ================================================= -->
+
+    <TextView
+        android:id="@+id/txtCategoryTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Tất cả món ăn"
+        android:textColor="#111111"
+        android:textSize="19sp"
+        android:textStyle="bold" />
+
+
+    <!-- ================================================= -->
+    <!-- FOOD RESULT                                       -->
+    <!-- Sau này thay phần này bằng RecyclerView           -->
+    <!-- ================================================= -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerFoods"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:clipToPadding="false" />
+
+
+    <!-- ================================================= -->
+    <!-- BOTTOM NAVIGATION                                 -->
+    <!-- ================================================= -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#FFFFFF"
+        android:elevation="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <!-- ================= HOME ================= -->
+
+        <LinearLayout
+            android:id="@+id/navHome"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="Trang chủ"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_home" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="Trang chủ"
+                android:textColor="#777777"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+
+
+        <!-- ================= SEARCH ================= -->
+
+        <LinearLayout
+            android:id="@+id/navSearch"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="Tìm kiếm"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_search" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="Tìm kiếm"
+                android:textColor="#B71C1C"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <!-- ================= CART ================= -->
+
+        <LinearLayout
+            android:id="@+id/navCart"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="Giỏ hàng"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_cart" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="Giỏ hàng"
+                android:textColor="#777777"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+
+
+        <!-- ================= PROFILE ================= -->
+
+        <LinearLayout
+            android:id="@+id/navProfile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="Tài khoản"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_user" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="Tài khoản"
+                android:textColor="#777777"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
